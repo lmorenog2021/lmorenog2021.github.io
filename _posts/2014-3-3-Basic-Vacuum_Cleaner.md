@@ -16,7 +16,7 @@ Follow this steps to start programming as quikly as possible:
    docker run --rm -it -p 7681:7681 -p 2303:2303 -p 1905:1905 -p 8765:8765 -p 6080:6080 -p 1108:1108 -p 7163:7163 -p 7164:7164 jderobot/robotics-academy:latest
    ```
    and for users with GPUs and software compatible with [virtualGL](https://virtualgl.org/)
-   ```javascriptdocker
+   ```javascript
    run --rm -it --device /dev/dri -p 7681:7681 -p 2303:2303 -p 1905:1905 -p 8765:8765 -p 6080:6080 -p 1108:1108 -p 7163:7163 -p 7164:7164 jderobot/robotics-academy:latest
    ```
 4. Now all that is left is to create a Unibotics account, navigate to the "Academy" tab, and start programing.
