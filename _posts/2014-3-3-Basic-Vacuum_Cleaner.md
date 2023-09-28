@@ -29,16 +29,17 @@ To make an autonomous robot that can move over as much floor area as possible, w
 
 For the obstacle avoidance software we will use the lidar, that when detecting a wall, will randomly choose another direction to move in.
 And for the coverage algorithm, we will ignore the many complicated solutions there are, and settle with a simple spiral pattern.
-[ADD CURA SLICER PICTURE]
+[image](https://github.com/lmorenog2021/lmorenog2021.github.io/images/infillCircle.png "Different types of infill")
+![image](/assets/images/infillCircle.png)
 
 ## First tests with the site
 To learn how to use the robot and to test diferent parameters I devised two small tests for some standalone features.
 The firs test was making the robot do the space filling spiral, playing around with linear and angular speeds, gave me a feel of the values and how they affect the robot.
-[ADD TEST PICTURE]
+[Spiral test]({{ site.baseurl }}/images/SpiralTest.png "The test spiral")
 
 The next test was one with the laser, I made a simple code that made it so the robot would detect a wall, and turn away from it before continuing forward. Thanks to this, I was able to select a range of angles to measure, and at which distance to stop the robot, so that it doesn't damage itself, but it can get close enough to a wall to be able to get through doorways.
 
-[ADD SECOND PICTURE]
+[Laser test]({{ site.baseurl }}/images/LaserTest.png "The laser test")
 
 ## Creating a state machine
 Now that we are familiar with the robot and how it behaves, lets make a simple state machine. You can probalby use less, or even more states, but I will use four states in a circular pattern.
