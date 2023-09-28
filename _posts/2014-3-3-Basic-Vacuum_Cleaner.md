@@ -32,11 +32,27 @@ And for the coverage algorithm, we will ignore the many complicated solutions th
 [ADD CURA SLICER PICTURE]
 
 ## First tests with the site
+To learn how to use the robot and to test diferent parameters I devised two small tests for some standalone features.
+The firs test was making the robot do the space filling spiral, playing around with linear and angular speeds, gave me a feel of the values and how they affect the robot.
+[ADD TEST PICTURE]
+
+The next test was one with the laser, I made a simple code that made it so the robot would detect a wall, and turn away from it before continuing forward. Thanks to this, I was able to select a range of angles to measure, and at which distance to stop the robot, so that it doesn't damage itself, but it can get close enough to a wall to be able to get through doorways.
+
+[ADD SECOND PICTURE]
 
 ## Creating a state machine
+Now that we are familiar with the robot and how it behaves, lets make a simple state machine. You can probalby use less, or even more states, but I will use four states in a circular pattern.
+[ADD SCHETCH]
+
+1. **Spiral**: Executes the space covering algorithm, and switches states when a wall is detected.
+2. **Turn**: Turns at a fixed speed for a random amount of time, uses a loop that checks time, NOT A SLEEP in order to keep it reactive
+3. **Forward**: Goes straight ahead at a fixed speed until it finds another wall, stores the amount of time in this state
+4. **Backwards**: Goes backwards at a fixed speed for about half of the time the forward state was active, this is to get to the middle point of two walls before moving on to the spiral.
 
 ## Testing the state machine
 
-## Minor adjustments
+[ADD VIDEO]
 
 ## Success! 
+And that's it! We now have a robot vacuum controlled by a simple state machine, and while it's performance will vary depending on luck, it works well enough for a first proyect.
+
