@@ -8,8 +8,8 @@ name: Luis Moreno
 # Short bio or description (displayed in the header)
 description: Robotics and Software Student 
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic) https://github.com/lmorenog2021/lmorenog2021.github.io/blob/master/images/NewLogo.jpg
-avatar: https://raw.githubusercontent.com/lmorenog2021/lmorenog2021.github.io/master/images/NewLogo.png
+# URL of your avatar or profile pic (you could use your GitHub profile pic) https://github.com/lmorenog2021/lmorenog2021.github.io/blob/master/images/NewLogo.jpg https://raw.githubusercontent.com/lmorenog2021/lmorenog2021.github.io/master/
+avatar: images/NewLogo.png
 
 #
 # Flags below are optional
