@@ -49,8 +49,10 @@ Now that we are familiar with the robot and how it behaves, lets make a simple s
 4. **Backwards**: Goes backwards at a fixed speed for about half of the time the forward state was active, this is to get to the middle point of two walls before moving on to the spiral.
 
 ## Testing the state machine
+[Video1.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/2e4e2cd0-4028-4dd6-9ad2-57e33b60903a)
 
-[ADD VIDEO]
+[Video2.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/b963f338-a54a-49d1-bcee-1d78e6584ff9)
+
 
 ## Success! 
 And that's it! We now have a robot vacuum controlled by a simple state machine, and while it's performance will vary depending on luck, it works well enough for a first proyect.
