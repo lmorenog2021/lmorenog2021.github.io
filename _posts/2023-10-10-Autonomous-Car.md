@@ -21,7 +21,7 @@ Now we can process the image to find the center of the line. There are two ways 
 3. Use OpenCV functions to find the centroid of the line  
    ✅ More reliable  
    ✅ Better aproximation helps when taking curves  
-   ❌ LHarder to implement  
+   ❌ Harder to implement  
    ❌ Processor heavy  
 
 We chose to use the second option to save us some trouble when making the PID, as the more advanced artificial vision will solve some problems that could arise when taking corners.
