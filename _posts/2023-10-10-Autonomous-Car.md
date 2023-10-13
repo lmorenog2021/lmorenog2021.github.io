@@ -120,11 +120,15 @@ pidW = PID(-320,320,-4,4)
 pidW.setPid(0.46,0.05,1.3)
 ```
 The way this PID implementation works is by setting up the limits of the inputs it can recieve, and the limits of the outputs it can write. Then you can tweak the constants Kp, Ki, Kd depending on how you want the PID to behave. We have set the input limits to (-320, 320) to represent the width of the screen, and the oitput limits as (-1, 1) as having any more anglar velocity will make the car spin out of control.   
-[ADD IMAGE]   
-(We take 320 as the center of the image, even though the camera is off to the side of the car. 385 would have been the correct point to take if we wanted a perfectly centered vehicle, but for simplicity we decided against it)   
-[ADD IMAGE]  
-For the constants you either have to try and make a mathematical model of the car, or simply test different values and find the best ones. After much experimentation, this are the ones we optimised for a linear velocity of 4'5.  
 
+(We take 320 as the center of the image, even though the camera is off to the side of the car. 385 would have been the correct point to take if we wanted a perfectly centered vehicle, but for simplicity we decided against it)
+<p align="center">
+  <img src="../images/CenterCarValues.png" height="350" title="Center values">
+  <img src="../images/CenterCar.png" height="350" alt="Center car">
+</p> 
+For the constants you either have to try and make a mathematical model of the car, or simply test different values and find the best ones. After much experimentation, this are the ones we optimised for a linear velocity of 4'5.
+
+![OutControlCar.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/124e94d5-3bed-44cc-87ce-b2445ac62881)  
 ## Testing for speed
 Using a constant velocity can give us great results, but to truly achieve speed we need to, like any racer, accelerate in the straights, and slow down before the curves. I had tried two methods:
 1. **Using the PID for linear velocity**
