@@ -128,7 +128,7 @@ The way this PID implementation works is by setting up the limits of the inputs 
   <img src="../images/CenterCarValues.png" height="350" title="Center values">
   <img src="../images/CenterCar.png" height="350" alt="Center car">
 </p> 
-For the constants you either have to try and make a mathematical model of the car, or simply test different values and find the best ones. After much experimentation, this are the ones we optimised for a linear velocity of 4'5.
+For the constants you either have to try and make a mathematical model of the car, or simply test different values and find the best ones, I reccomend folllowing [this](https://pidexplained.com/how-to-tune-a-pid-controller/) tutorial and make some educated guesses. After much experimentation, this are the ones we optimised for a linear velocity of 4'5.
 
 ## Testing for speed
 Using a constant velocity can give us great results, but to truly achieve speed we need to, like any racer, accelerate in the straights, and slow down before the curves. I had tried two methods:
