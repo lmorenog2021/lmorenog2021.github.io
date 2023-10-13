@@ -120,7 +120,7 @@ pidW = PID(-320,320,-4,4)
 pidW.setPid(0.46,0.05,1.3)
 ```
 The way this PID implementation works is by setting up the limits of the inputs it can recieve, and the limits of the outputs it can write. Then you can tweak the constants Kp, Ki, Kd depending on how you want the PID to behave. We have set the input limits to (-320, 320) to represent the width of the screen, and the oitput limits as (-1, 1) as having any more anglar velocity will make the car spin out of control.   
-![OutControlCar.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/124e94d5-3bed-44cc-87ce-b2445ac62881)  
+[OutControlCar.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/124e94d5-3bed-44cc-87ce-b2445ac62881)  
 (We take 320 as the center of the image, even though the camera is off to the side of the car. 384 would have been the correct point to take if we wanted a perfectly centered vehicle, but for simplicity we decided against it)
 <p align="center">
   <img src="../images/CenterCarValues.png" height="350" title="Center values">
