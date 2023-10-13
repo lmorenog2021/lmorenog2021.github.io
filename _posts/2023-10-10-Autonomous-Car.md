@@ -119,8 +119,10 @@ class PID:
 pidW = PID(-320,320,-4,4)
 pidW.setPid(0.46,0.05,1.3)
 ```
-The way this PID implementation works is by setting up the limits of the inputs it can recieve, and the limits of the outputs it can write. Then you can tweak the constants Kp, Ki, Kd depending on how you want the PID to behave. We have set the input limits to (-320, 320) to represent the width of the screen, and the oitput limits as (-1, 1) as having any more anglar velocity will make the car spin out of control.   
-[OutControlCar.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/124e94d5-3bed-44cc-87ce-b2445ac62881)  
+The way this PID implementation works is by setting up the limits of the inputs it can recieve, and the limits of the outputs it can write. Then you can tweak the constants Kp, Ki, Kd depending on how you want the PID to behave. We have set the input limits to (-320, 320) to represent the width of the screen, and the oitput limits as (-1, 1) as having any more anglar velocity will make the car spin out of control.
+<p align="center">
+[OutControlCar.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/124e94d5-3bed-44cc-87ce-b2445ac62881) 
+</p> 
 (We take 320 as the center of the image, even though the camera is off to the side of the car. 384 would have been the correct point to take if we wanted a perfectly centered vehicle, but for simplicity we decided against it)
 <p align="center">
   <img src="../images/CenterCarValues.png" height="350" title="Center values">
@@ -173,3 +175,10 @@ Using a constant velocity can give us great results, but to truly achieve speed 
    ```
    And it works!
    ...sometimes. It can finish laps, but once in a while, it will deviate from the path and lose itself, so it becomes a tradeoff, an improvement in speed vs the flawless laps of the constant velocity model.
+
+## Results
+In the end, to get some good fotage, we reduced the inicrements of speed in the levels, so we could have a car that could reliably and cleanly take turns, but also speed up during straitghs.
+
+[FirstHalf.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/32a1ecd2-3efe-4528-90e5-13a0ce5b7aad)
+[SecondHalf.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/1b43ed40-6810-45e8-9373-44fb041cb0b3)
+
