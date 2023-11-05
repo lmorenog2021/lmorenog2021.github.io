@@ -10,6 +10,8 @@ To do this we have discarded the camera, and instead we added a lidar to the fro
 ## What is VFF
 VFF is an algorithm very popular in the world of mobile robotics, as it allows for autonomous movement of a robot as long as we have a map where the robot can know its absolute position, and a sensor to analize its enviroments, and change the map according to cahnges in it's surroundings.
 
+![Vector Representation](../images/VFF_GUI.png)
+
 We are going to implement it by calculating two vectors, one that points to our destination, and another one that points away from any obstacles. The sum of those two vectors will be our direction vector.
 
 ## Calculating the oposing force vector
@@ -104,6 +106,8 @@ A solution we came up with is incrementing proportionally the X and Y values of 
 By far the most challlenging aspect of this task was adjusting the values given to the car depending on the vectors received. This was also made harder because the walls had no collisions, so any small mistake meant restarting the entire simulation, and this process is not a quick one. Another aspect that proved challenging was the position of the targets, as they were few of them and very spaced out; but clamping the target vector helped avoid  the car overspeedeng and and taking curves in a straight line.
 
 One last porblem was connectivity, as after an update, the website would randomly end connection, and when it worked, it became sluggish and slow.
-[ADD PICTURE]
+
+![Error](../images/Error_Message.png)
+
 ## Results
 These are the videos of car doing a loop around the track (Divided into parts due to restrictions on github).
