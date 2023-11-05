@@ -36,5 +36,9 @@ To solve this we tried addng a constant number to the linear velocity, this solv
 A solution we came up with is incrementing proportionally the X and Y values of the apposing force with two different constants. This seemed to work, but we recommend some testing, as your results may vary, as the slightest changes in code and simulation could warrant adjustments for these constants.
 
 ## Problems faced
+By far the most challlenging aspect of this task was adjusting the values given to the car depending on the vectors received. This was also made harder because the walls had no collisions, so any small mistake meant restarting the entire simulation, and this process is not a quick one. Another aspect that proved challenging was the position of the targets, as they were few of them and very spaced out; but clamping the target vector helped avoid  the car overspeedeng and and taking curves in a straight line.
 
+One last porblem was connectivity, as after an update, the website would randomly end connection, and when it worked, it became sluggish and slow.
+[ADD PICTURE]
 ## Results
+These are the videos of car doing a loop around the track (Divided into parts due to restrictions on github).
