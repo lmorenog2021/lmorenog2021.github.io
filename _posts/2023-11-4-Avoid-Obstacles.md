@@ -100,8 +100,15 @@ Our next attempt was to add X values as linear speed and Y values as angular. Pr
 
 To solve this we tried adding a constant number to the linear velocity, this solved the starting and stopping problem, but it created a new one; the car just wouldn't turn in time to avoid walls and other cars.
 
-A solution we came up with is incrementing proportionally the X and Y values of the opposing force with two different constants. This seemed to work, but we recommend some testing, as your results may vary, as the slightest changes in code and simulation could warrant adjustments for these constants.
+A solution we came up with is incrementing proportionally the X and Y values of the opposing force with two different constants. This seemed to work, but we recommend some testing, as your results may vary, due to the slightest changes in the iterative code, and the specs of your machine could warrant adjustments for these constants. But if you want a starting point, these are the ones we ended up on:
 
+```python
+x = (1/dist) * math.cos(angle) * -2
+y = (1/dist) * math.sin(angle) * -10.5
+#------------------------------------------
+HAL.setV(avgForce[0]+5)
+HAL.setW(avgForce[1])
+```
 ## Problems faced
 By far the most challenging aspect of this task was adjusting the values given to the car depending on the vectors received. This was also made harder because the walls had no collisions, so any small mistake meant restarting the entire simulation, and this process is not a quick one. Another aspect that proved challenging was the position of the targets, as they were few of them and very spaced out; clamping the target vector helped avoid  the car overspeeding and taking curves in a straight line.
 
@@ -109,8 +116,16 @@ One last problem was connectivity, as after an update, the website would randoml
 
 ![Error](../images/Error_Message.png)
 
+
 You can see the same connectivity problems on the videos we made, as it randomly cuts off the simulation, and the limitations of our machine makes it impossible to run the program locally at the same time as the recording software. 
 
 ## Results
-These are the videos of our car doing a loop around the track (Divided into parts due to restrictions on github).
+The first two videos showcase some errors we encountered while executing the code, the last two represent a full lap around the circuit (divided into two due to github limitations on file size).
 
+[1-Smooth_Ride_But_Lag.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/a9637039-565f-4f97-b7c8-69a78ad83c89)
+
+[2-Different_type_of_lag.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/9c22a4cf-cdd8-40c3-9c97-1460708484f5)
+
+[Finished_Lap_Part1.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/1a2508cf-58a5-4c4b-8734-c4bda4f246b3)
+
+[Finished_Lap_Part2.webm](https://github.com/lmorenog2021/lmorenog2021.github.io/assets/92941117/ceac61b0-9bb3-45b3-a2da-5c3c2bdf579d)
