@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task 1 - Basic vacuum cleaner
+title: Task 3 - Avoid Obstacles
 ---
 ## Objective of this task
 For this task we are going to take the car we've been working on previously, and make it run laps around our digital track; with the added complexity of other cars that he must avoid.
