@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task 2 - Rescue People
+title: Task 6 - Rescue People
 ---
 # Objective of this task
 We want to do something fun
