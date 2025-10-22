@@ -2,7 +2,7 @@
 layout: post
 title: Task 5 - Montecarlo Localization
 ---
-# Objective of this task
+# Objective of this task and test
 We want to use a probabilistic approach to finding the location of the robot in a known map. Using the LIDAR the robot comes equipped with as the only sensor to rely on.
 
 # How does our algorithm work
