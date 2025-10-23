@@ -126,8 +126,7 @@ To address this, we implemented a **rotational scanning approach**:
 
 This ensures that even if a person’s face is tilted, the classifier will eventually see it at a near-upright angle and detect it.
 
-Each successful detection logs the **drone’s coordinates** where the person was found.
----
+For each succesful scan where a person is found, the location is compared to previous succesful scans, and if it is new, we log it for later use.
 
 # Summary and Results
 
