@@ -73,7 +73,10 @@ The initial mission data (the boat location and estimated survivor coordinates) 
 
 However, the drone’s control API (`HAL`) does not accept GPS coordinates directly — it requires **UTM (Universal Transverse Mercator)** coordinates in meters.
 
-To handle this we made the conversions using an external tool.
+To handle this we made the conversions using multiple external tools.
+
+First we took the GPS coordinates that were given to us in degrees, minutes, and seconds; [and converted them to decimal degrees](https://www.rapidtables.org/convert/number/degrees-minutes-seconds-to-degrees.html).<br/>
+With that done, we can use this [other site](https://rcn.montana.edu/Resources/Converter.aspx) to find out the **Zone, Eastings, and Northings** of our GPS coordinates.
 
 **[ADD IMAGE OF WEBSITE]**
 
