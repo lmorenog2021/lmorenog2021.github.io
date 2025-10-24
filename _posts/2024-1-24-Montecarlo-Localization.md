@@ -80,6 +80,8 @@ With that done, we can use this [other site](https://rcn.montana.edu/Resources/C
 
 **[ADD IMAGE OF WEBSITE]**
 
+Lastly, we convert the global UTM coordinates into local coordinates, taking the boat location as (0,0)
+
 ---
 
 ## Search algorithm
