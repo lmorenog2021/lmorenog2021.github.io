@@ -141,6 +141,6 @@ For each succesful scan where a person is found, the location is compared to pre
 
 After the execution we get this result on the terminal:
 <img width="1108" height="167" alt="image" src="https://github.com/user-attachments/assets/30f32e41-5080-491f-bfb5-3dba9b143f7c" />
-Ignoring the first attempt that only detected a single person, the attempt that was shown in the video was succesful as it detected all 6 of the survivors
+Ignoring the previous attempt (a test at a higher altitude than the latter tests) that only detected a single person, the attempt that was shown in the video was succesful as it detected all 6 of the survivors
 
 
