@@ -113,7 +113,8 @@ This creates a smooth expanding grid path:
 
 This way, the drone covers the area evenly while avoiding overlap between passes.
 
-**[ADD CODE BLOCK DIAGRAM OR IMAGE OF SEARCH PATTERN]**
+<img width="737" height="738" alt="image" src="https://github.com/user-attachments/assets/62cd8ee7-8f2a-44b2-8bdf-b16c0f73d6aa" />
+
 
 ---
 
