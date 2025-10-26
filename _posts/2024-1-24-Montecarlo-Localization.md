@@ -78,7 +78,8 @@ To handle this we made the conversions using multiple external tools.
 First we took the GPS coordinates that were given to us in degrees, minutes, and seconds; [and converted them to decimal degrees](https://www.rapidtables.org/convert/number/degrees-minutes-seconds-to-degrees.html).<br/>
 With that done, we can use this [other site](https://rcn.montana.edu/Resources/Converter.aspx) to find out the **Zone, Eastings, and Northings** of our GPS coordinates.
 
-**[ADD IMAGE OF WEBSITE]**
+<img width="994" height="623" alt="image" src="https://github.com/user-attachments/assets/b25a8f28-3d8d-4680-ad83-9a3ef50cc0ff" />
+
 
 Lastly, we convert the global UTM coordinates into local coordinates, taking the boat location as (0,0)
 
@@ -137,6 +138,7 @@ For each succesful scan where a person is found, the location is compared to pre
 # Summary and Results
 
 [![Task 2: Rescue People](https://img.youtube.com/vi/c0Sszfwa4wY/0.jpg)](https://www.youtube.com/watch?v=c0Sszfwa4wY)
+
 After the execution we get this result on the terminal:
 <img width="1108" height="167" alt="image" src="https://github.com/user-attachments/assets/30f32e41-5080-491f-bfb5-3dba9b143f7c" />
 Ignoring the first attempt that only detected a single person, the attempt that was shown in the video was succesful as it detected all 6 of the survivors
