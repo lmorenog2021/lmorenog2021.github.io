@@ -137,3 +137,6 @@ For each succesful scan where a person is found, the location is compared to pre
 
 [ADD VIDEO]
 
+<img width="1108" height="167" alt="image" src="https://github.com/user-attachments/assets/30f32e41-5080-491f-bfb5-3dba9b143f7c" />
+
+
