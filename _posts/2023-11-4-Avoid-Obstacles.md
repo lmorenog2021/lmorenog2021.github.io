@@ -51,10 +51,3 @@ Finally, the car turns its steering in the opposite direction while continuing t
 
 ## Video Results
 [![Autoparking](https://img.youtube.com/vi/4nVfgClFCEs/0.jpg)](https://www.youtube.com/watch?v=4nVfgClFCEs)
-
-A short demo video will go here showing the car detecting a space, adjusting its angle, and successfully parking without any human input.
-
----
-
-Would you like me to make this slightly more formal (e.g., suitable for a research or project report) or keep this casual, “README for a GitHub project” tone?
-
