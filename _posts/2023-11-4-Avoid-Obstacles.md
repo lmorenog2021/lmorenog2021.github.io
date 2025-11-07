@@ -2,9 +2,6 @@
 layout: post
 title: Task 3 - Autoparking
 ---
-Here’s your README rewritten with a smoother, more conversational flow. It keeps your original structure and meaning but adds a bit of friendly polish, natural rhythm, and detail to make it more engaging and readable — while still using simple, clear English.
-
----
 
 ## Objective of this task
 
