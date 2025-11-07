@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task 1 - Basic vacuum cleaner
+title: Task 1 - Localized vacuum cleaner
 ---
 
 ## Setup and first problems
