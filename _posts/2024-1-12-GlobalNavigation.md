@@ -68,7 +68,7 @@ The robot measures its position and angle relative to the next waypoint, and usi
 This provides stable and predictable motion suitable for holonomic platforms.
 
 ### Video Example
-[Add Video]
+[![First Example](https://img.youtube.com/vi/AbDXpyGJzAw/0.jpg)](https://www.youtube.com/watch?v=AbDXpyGJzAw)
 
 ---
 
@@ -84,6 +84,6 @@ However:
 ### Different Code
 
 ### Video Example
-[Add Video]
+[![Second Example](https://img.youtube.com/vi/sLmZ-jPfSF0/0.jpg)](https://www.youtube.com/watch?v=sLmZ-jPfSF0)
 
 ---
