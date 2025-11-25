@@ -76,12 +76,15 @@ This provides stable and predictable motion suitable for holonomic platforms.
 The final stage transitions from holonomic motion to a **rectangular robot with Ackermann steering**, such as a real warehouse automated guided vehicle (AGV).
 
 ### Reusing Code
-Much of the map processing, coordinate transforms, and state validity logic from the previous type can be reused, thanks to the OOP aproach taken.  
-However:
-- The robot footprint is no longer the same as before: the planner must respect the vehicle’s non-holonomic constraints.
-- The motion controller had to be replaced by a steering-based controller capable of moving the vehicle around curved trajectories.
+Much of the map processing, coordinate transforms, and state validity logic from the previous type can be reused, thanks to the OOP aproach taken.<br />
+The MapProcessing class could be reused same as the footprint validator class in charge of the geometric checks. The overall code for the state machine was reused, but the helper functions within were changed to accomodate the new planning software and the new ways the robot was allowed to move.
 
 ### Different Code
+To make an ackerman plan with OMPL we had two choices to make, **DubinsStateSpace** and **ReedsSheppStateSpace**. While both were valid choices, I went with Reeds for it's ability to include backing up in it's planing. This was a key feature in the cramped space of the warehouse and the lacking turning radius of the robot.<br />
+To properly implement this OMPL I needed to take some extra measurements. The wheelbase (distance between axels) was taken by measuring the robot and using a rule of thirds using the data that was given in the briefing. The steer angle was taken a similar way, by measuring on screen and superimposing a digital angle wheel to get "precise" measurements.
+
+For the driving part of the state machine I made it so that on each update it checks the next target point on the planned path, computes the distance and angle from the robot to that point, and decides whether to move forward or reverse depending on how well the robot is already facing the target. .<br />
+It then generates a steering angle  and a linear speed proportional to the diference in actual position and target position. Using a simplified Ackermann model, it converts the chosen steering angle and linear speed into an angular velocity command, clamps it to a safe range, and finally sends the linear and angular velocity commands to the robot; when a waypoint is reached, it advances to the next one, and when the whole path is finished, it stops.
 
 ### Video Example
 [![Second Example](https://img.youtube.com/vi/sLmZ-jPfSF0/0.jpg)](https://www.youtube.com/watch?v=sLmZ-jPfSF0)
