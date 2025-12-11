@@ -25,6 +25,6 @@ This approach ensures that free and occupied updates are applied in the right lo
 Robot movement is controlled by a small state machine that cycles through a predictable exploration routine. It begins with an initial turn, drives forward until an obstacle appears, performs a pair of ninety-degree turns with a short forward step in between, and then continues straight again. The turning direction alternates each cycle, allowing the robot to sweep different parts of the environment. This structured pattern keeps the behavior simple but still effective for covering space while the map is being built.
 
 # Video example
-[YOUTUBE LINK]
+[![LaserMapping](https://img.youtube.com/vi/xJt3bN62E5c/0.jpg)](https://www.youtube.com/watch?v=xJt3bN62E5c)
 
 
