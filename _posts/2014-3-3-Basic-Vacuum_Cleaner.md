@@ -124,4 +124,4 @@ The main loop continuously:
 When all reachable cells have been vacuumed, the system prints a message to notify the end of the program.
 
 # Vídeo Result
-[![Task 1: Vacuum Cleaner](https://img.youtube.com/vi/c0Sszfwa4wY/0.jpg)](https://www.youtube.com/watch?v=c0Sszfwa4wY)
+[![Task 1: Vacuum Cleaner](https://img.youtube.com/vi/pj-fcIMsbhs/0.jpg)](https://www.youtube.com/watch?v=pj-fcIMsbhs)
